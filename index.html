@@ -57,6 +57,17 @@
   @media(prefers-reduced-motion:reduce){.hero-art img{animation:none}}
   @media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-art{order:-1}.bubble{display:none}}
 
+  /* demo */
+  .demo{background:var(--cream-soft)}
+  .demo .wrap{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center}
+  .demo-phone{width:380px;height:780px;background:var(--brown-dark);border-radius:48px;padding:14px;box-shadow:0 24px 50px rgba(74,44,16,.25)}
+  .demo-phone iframe{width:100%;height:100%;border:0;border-radius:36px;background:#FBF3E4}
+  .tips{list-style:none;margin:24px 0 32px}
+  .tips li{padding:10px 0 10px 40px;position:relative;font-size:18px}
+  .tips li span{position:absolute;left:0;top:8px;width:28px;height:28px;border-radius:50%;background:var(--cream);color:var(--brown);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px}
+  code{background:var(--cream);padding:2px 8px;border-radius:6px;font-weight:700;color:var(--brown-dark)}
+  @media(max-width:900px){.demo .wrap{grid-template-columns:1fr}.demo-phone{display:none}}
+
   /* problem */
   .problem{background:var(--paper)}
   .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
@@ -149,6 +160,7 @@
   <div class="wrap">
     <a class="brand" href="#top"><img src="logo.png" alt="">generations</a>
     <ul>
+      <li><a href="#demo">Try the demo</a></li>
       <li><a href="#features">Features</a></li>
       <li><a href="#bigview">Big view</a></li>
       <li><a href="#plans">Plans</a></li>
@@ -164,8 +176,8 @@
       <h1>Stay close to the people who <span>raised you.</span></h1>
       <p>Generations helps busy adults stay connected to aging parents and grandparents, without adding one more thing to the day. Share a moment in seconds, get one gentle reminder at a time that suits you, and give your loved one a screen they can actually use.</p>
       <div class="ctas">
-        <a class="btn btn-primary" href="#plans">See plans</a>
-        <a class="btn btn-ghost" href="#features">How it works</a>
+        <a class="btn btn-primary" href="#demo">Try the live demo</a>
+        <a class="btn btn-ghost" href="#plans">See plans</a>
       </div>
       <p class="note">Web beta available now · iPhone and Android app coming soon</p>
     </div>
@@ -176,6 +188,27 @@
     </div>
   </div>
 </header>
+
+<section class="demo" id="demo">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Live demo</p>
+      <h2>Try Generations right now.</h2>
+      <p class="lead">This is the real app running in your browser. No download and no account needed.</p>
+      <ul class="tips">
+        <li><span>1</span>Tap <strong>Set up this device</strong>, then enter any test phone number, your first name and a family name. No text message is sent.</li>
+        <li><span>2</span>Choose a role, and turn on <strong>Show a sample family</strong> to see posts, messages and reactions right away.</li>
+        <li><span>3</span>Pick <strong>grandparent</strong> to see the simple, large-print view.</li>
+        <li><span>4</span>Want to join a family instead? Use the demo code <code>GEN-DEMO</code>.</li>
+      </ul>
+      <a class="btn btn-primary" href="https://willduckdenning.github.io/generations-app/" target="_blank" rel="noopener">Open the demo full screen</a>
+      <p class="note" style="margin-top:16px;font-size:15px;color:var(--muted)">Anything you enter stays only in your own browser. It isn't sent to us or shared with anyone.</p>
+    </div>
+    <div class="demo-phone">
+      <iframe src="https://willduckdenning.github.io/generations-app/" title="Generations app live demo" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
 
 <section class="problem">
   <div class="wrap">
@@ -332,7 +365,7 @@
     <img src="logo.png" alt="">
     <h2>Make staying close the easy part.</h2>
     <p class="lead">Generations is in web beta now, and the iPhone and Android app is on its way to the App Store.</p>
-    <a class="btn btn-primary" href="#plans">See plans</a>
+    <a class="btn btn-primary" href="https://willduckdenning.github.io/generations-app/" target="_blank" rel="noopener">Try the live demo</a>
   </div>
 </section>
 
